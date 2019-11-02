@@ -1,0 +1,105 @@
+2019-11-02T19:57:35.291628+00:00 heroku[web.1]: State changed from up to starting
+2019-11-02T19:57:36.724332+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2019-11-02T19:57:36.789825+00:00 app[web.1]: [2019-11-02 19:57:36 +0000] [11] [INFO] Worker exiting (pid: 11)
+2019-11-02T19:57:36.790164+00:00 app[web.1]: [2019-11-02 19:57:36 +0000] [10] [INFO] Worker exiting (pid: 10)
+2019-11-02T19:57:36.79423+00:00 app[web.1]: [2019-11-02 19:57:36 +0000] [4] [INFO] Handling signal: term
+2019-11-02T19:57:36.896517+00:00 app[web.1]: [2019-11-02 19:57:36 +0000] [4] [INFO] Shutting down: Master
+2019-11-02T19:57:37.037839+00:00 heroku[web.1]: Process exited with status 0
+2019-11-02T19:57:39.001849+00:00 heroku[web.1]: Starting process with command `gunicorn main:app --log-file -`
+2019-11-02T19:57:42.119067+00:00 app[web.1]: [2019-11-02 19:57:42 +0000] [4] [INFO] Starting gunicorn 19.9.0
+2019-11-02T19:57:42.121002+00:00 app[web.1]: [2019-11-02 19:57:42 +0000] [4] [INFO] Listening at: http://0.0.0.0:4458 (4)
+2019-11-02T19:57:42.121119+00:00 app[web.1]: [2019-11-02 19:57:42 +0000] [4] [INFO] Using worker: sync
+2019-11-02T19:57:42.129066+00:00 app[web.1]: [2019-11-02 19:57:42 +0000] [10] [INFO] Booting worker with pid: 10
+2019-11-02T19:57:42.152547+00:00 app[web.1]: [2019-11-02 19:57:42 +0000] [11] [INFO] Booting worker with pid: 11
+2019-11-02T19:57:42.81669+00:00 heroku[web.1]: State changed from starting to up
+2019-11-02T19:57:43+00:00 app[api]: Build succeeded
+2019-11-02T20:00:06+00:00 app[api]: Build started by user udasitharani@gmail.com
+2019-11-02T20:00:24.236135+00:00 heroku[web.1]: Restarting
+2019-11-02T20:00:24.238478+00:00 heroku[web.1]: State changed from up to starting
+2019-11-02T20:00:23.980151+00:00 app[api]: Deploy a108e16f by user udasitharani@gmail.com
+2019-11-02T20:00:23.980151+00:00 app[api]: Release v26 created by user udasitharani@gmail.com
+2019-11-02T20:00:25.105414+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2019-11-02T20:00:25.140562+00:00 app[web.1]: [2019-11-02 20:00:25 +0000] [10] [INFO] Worker exiting (pid: 10)
+2019-11-02T20:00:25.141326+00:00 app[web.1]: [2019-11-02 20:00:25 +0000] [4] [INFO] Handling signal: term
+2019-11-02T20:00:25.14133+00:00 app[web.1]: [2019-11-02 20:00:25 +0000] [11] [INFO] Worker exiting (pid: 11)
+2019-11-02T20:00:25.242015+00:00 app[web.1]: [2019-11-02 20:00:25 +0000] [4] [INFO] Shutting down: Master
+2019-11-02T20:00:25.326033+00:00 heroku[web.1]: Process exited with status 0
+2019-11-02T20:00:28.00552+00:00 heroku[web.1]: Starting process with command `gunicorn main:app --log-file -`
+2019-11-02T20:00:29.956607+00:00 app[web.1]: [2019-11-02 20:00:29 +0000] [4] [INFO] Starting gunicorn 19.9.0
+2019-11-02T20:00:29.958254+00:00 app[web.1]: [2019-11-02 20:00:29 +0000] [4] [INFO] Listening at: http://0.0.0.0:46513 (4)
+2019-11-02T20:00:29.958353+00:00 app[web.1]: [2019-11-02 20:00:29 +0000] [4] [INFO] Using worker: sync
+2019-11-02T20:00:29.962448+00:00 app[web.1]: [2019-11-02 20:00:29 +0000] [10] [INFO] Booting worker with pid: 10
+2019-11-02T20:00:30.023874+00:00 app[web.1]: [2019-11-02 20:00:30 +0000] [11] [INFO] Booting worker with pid: 11
+2019-11-02T20:00:30.472901+00:00 heroku[web.1]: State changed from starting to up
+2019-11-02T20:00:32+00:00 app[api]: Build succeeded
+2019-11-02T20:00:48.307013+00:00 app[api]: Starting process with command `bash` by user udasitharani@gmail.com
+2019-11-02T20:00:52.703092+00:00 heroku[run.7507]: State changed from starting to up
+2019-11-02T20:01:05.7862+00:00 heroku[run.7507]: Process exited with status 0
+2019-11-02T20:01:05.826461+00:00 heroku[run.7507]: State changed from up to complete
+2019-11-02T20:01:16.234881+00:00 heroku[router]: at=info method=GET path="/" host=voteapp-wwe.herokuapp.com request_id=18e2ffff-d726-4ab9-923f-c646d2889256 fwd="122.175.145.202" dyno=web.1 connect=1ms service=38ms status=500 bytes=455 protocol=https
+2019-11-02T20:01:16.225916+00:00 app[web.1]: [2019-11-02 20:01:16,221] ERROR in app: Exception on / [GET]
+2019-11-02T20:01:16.225962+00:00 app[web.1]: Traceback (most recent call last):
+2019-11-02T20:01:16.225965+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1249, in _execute_context
+2019-11-02T20:01:16.225968+00:00 app[web.1]: cursor, statement, parameters, context
+2019-11-02T20:01:16.225971+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 580, in do_execute
+2019-11-02T20:01:16.225973+00:00 app[web.1]: cursor.execute(statement, parameters)
+2019-11-02T20:01:16.225975+00:00 app[web.1]: sqlite3.OperationalError: no such table: votes
+2019-11-02T20:01:16.225977+00:00 app[web.1]:
+2019-11-02T20:01:16.225981+00:00 app[web.1]: The above exception was the direct cause of the following exception:
+2019-11-02T20:01:16.225983+00:00 app[web.1]:
+2019-11-02T20:01:16.225985+00:00 app[web.1]: Traceback (most recent call last):
+2019-11-02T20:01:16.225987+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+2019-11-02T20:01:16.225989+00:00 app[web.1]: response = self.full_dispatch_request()
+2019-11-02T20:01:16.225991+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+2019-11-02T20:01:16.225993+00:00 app[web.1]: rv = self.handle_user_exception(e)
+2019-11-02T20:01:16.225994+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+2019-11-02T20:01:16.225996+00:00 app[web.1]: reraise(exc_type, exc_value, tb)
+2019-11-02T20:01:16.225998+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+2019-11-02T20:01:16.225999+00:00 app[web.1]: raise value
+2019-11-02T20:01:16.226+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+2019-11-02T20:01:16.226002+00:00 app[web.1]: rv = self.dispatch_request()
+2019-11-02T20:01:16.226003+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+2019-11-02T20:01:16.226005+00:00 app[web.1]: return self.view_functions[rule.endpoint](**req.view_args)
+2019-11-02T20:01:16.226006+00:00 app[web.1]: File "/app/main.py", line 57, in home
+2019-11-02T20:01:16.226008+00:00 app[web.1]: total_votes = db.session.query(Votes).count()
+2019-11-02T20:01:16.226009+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3605, in count
+2019-11-02T20:01:16.226011+00:00 app[web.1]: return self.from_self(col).scalar()
+2019-11-02T20:01:16.226012+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3330, in scalar
+2019-11-02T20:01:16.226014+00:00 app[web.1]: ret = self.one()
+2019-11-02T20:01:16.226015+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3300, in one
+2019-11-02T20:01:16.226017+00:00 app[web.1]: ret = self.one_or_none()
+2019-11-02T20:01:16.226018+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3269, in one_or_none
+2019-11-02T20:01:16.22602+00:00 app[web.1]: ret = list(self)
+2019-11-02T20:01:16.226021+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3342, in __iter__
+2019-11-02T20:01:16.226022+00:00 app[web.1]: return self._execute_and_instances(context)
+2019-11-02T20:01:16.226024+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3367, in _execute_and_instances
+2019-11-02T20:01:16.226025+00:00 app[web.1]: result = conn.execute(querycontext.statement, self._params)
+2019-11-02T20:01:16.226027+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+2019-11-02T20:01:16.226028+00:00 app[web.1]: return meth(self, multiparams, params)
+2019-11-02T20:01:16.22603+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+2019-11-02T20:01:16.226031+00:00 app[web.1]: return connection._execute_clauseelement(self, multiparams, params)
+2019-11-02T20:01:16.226033+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+2019-11-02T20:01:16.226034+00:00 app[web.1]: distilled_params,
+2019-11-02T20:01:16.226035+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1253, in _execute_context
+2019-11-02T20:01:16.226037+00:00 app[web.1]: e, statement, parameters, cursor, context
+2019-11-02T20:01:16.226038+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1473, in _handle_dbapi_exception
+2019-11-02T20:01:16.22604+00:00 app[web.1]: util.raise_from_cause(sqlalchemy_exception, exc_info)
+2019-11-02T20:01:16.226041+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 398, in raise_from_cause
+2019-11-02T20:01:16.226043+00:00 app[web.1]: reraise(type(exception), exception, tb=exc_tb, cause=cause)
+2019-11-02T20:01:16.226044+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 152, in reraise
+2019-11-02T20:01:16.226045+00:00 app[web.1]: raise value.with_traceback(tb)
+2019-11-02T20:01:16.226047+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1249, in _execute_context
+2019-11-02T20:01:16.226048+00:00 app[web.1]: cursor, statement, parameters, context
+2019-11-02T20:01:16.22605+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 580, in do_execute
+2019-11-02T20:01:16.226051+00:00 app[web.1]: cursor.execute(statement, parameters)
+2019-11-02T20:01:16.226052+00:00 app[web.1]: sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: votes
+2019-11-02T20:01:16.226054+00:00 app[web.1]: [SQL: SELECT count(*) AS count_1
+2019-11-02T20:01:16.226055+00:00 app[web.1]: FROM (SELECT votes.id AS votes_id, votes.user_id AS votes_user_id, votes.fighter_id AS votes_fighter_id
+2019-11-02T20:01:16.226057+00:00 app[web.1]: FROM votes) AS anon_1]
+2019-11-02T20:01:16.226064+00:00 app[web.1]: (Background on this error at: http://sqlalche.me/e/e3q8)
+2019-11-02T20:01:16.227072+00:00 app[web.1]: 10.63.127.111 - - [02/Nov/2019:20:01:16 +0000] "GET / HTTP/1.1" 500 290 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
+
+
+
+
+

@@ -1,0 +1,168 @@
+body {
+    background: rgb(220,220,220);
+    color: rgb(0,0,0);
+}
+
+#pageContainer {
+    padding: 10px;
+    align-content: center;
+}
+
+#PageTitleContainer {
+    background-color: Tomato;
+    height: 80px;
+    width: 95%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.title {
+    margin: 0px 100px;
+}
+
+#PageTitle {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+    font-family: 'Agency FB';
+}
+
+#ContentBodyContainer {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.message {
+    width: 92%;
+    margin: 0px 15px;
+    padding: 10px 30px;
+    font-size: 1.5em;
+}
+
+#error {
+    background: rgb(255, 150, 150);
+    color: rgb(255, 0, 0);
+}
+
+#info {
+    background: rgb(255, 255, 120);
+    color: rgb(120, 120, 0);
+}
+
+#success {
+    background: rgb(150, 255, 150);
+    color: rgb(0, 150, 0);
+}
+
+#emailSpan {
+    width: 99%;
+    margin: 50px 20px;
+    font-size: 2em;
+}
+
+#emailEntry {
+    width: 70%;
+    padding: 10px 15px 10px 10 px;
+    margin: 0px 0px 0px 30px;
+    border: 3px solid tomato;
+    outline: none;
+    font-size: 1em;
+    -webkit-transition: 0.3s;
+    transition: 0.2s;
+}
+
+#emailEntry:focus {
+    border: 3px solid red;
+}
+
+#imageContainer {
+    margin: 40px 20px 20px 20px;
+}
+
+#john_cena_img {
+    height: 200px;
+    width: 300px;
+    margin: 20px 100px 0px 150px;
+}
+
+#the_rock_img {
+    height: 200px;
+    width: 300px;
+    margin: 20px 20px 0px 150px;
+}
+
+#radioContainer {
+    margin: 20px 20px 40px 20px;
+}
+
+#john_cena_radio {
+    margin: 20px 20px 20px 150px;
+}
+
+#the_rock_radio {
+    margin: 20px 20px 20px 450px;
+}
+
+#john_cena_label {
+    font-size: 2em;
+    font-family: "Garamond Header"
+}
+
+#the_rock_label {
+    font-size: 2em;
+    font-family: "Garamond Header"
+}
+
+#submit_btn {
+    margin: 0px auto 20px 170px;
+    height: 40px;
+    width: 10%;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 1.5em;
+    background: rgb(100, 255, 100);
+    color: rgb(50, 105, 50);
+}
+
+#votes_each {
+    border: 1px groove;
+    width: 90%;
+    margin: 40px auto;
+    padding: 0px 20px 20px 20px;
+}
+
+#votes_bar {
+    margin : 30px auto;
+    border-radius: 5px;
+    height: 30px;
+    width: 90%;
+    background: rgb(255, 50, 50);
+}
+
+#john_cena_bar {
+    height: 100%;
+    background: rgb(50,50,255);
+}
+
+.bar_icon {
+    width: 80px;
+    height: 80px;
+}
+
+figure {
+    float: left;
+}
+
+.cc {
+    width: 30px;
+    font-size: 1.5em;
+}
+
+#total_votes {
+    font-size: 2em;
+    margin: 100px 50px 0px 50px;
+}

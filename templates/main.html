@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>John Cena vs The Rock</title>
+    <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='favicon.ico') }}" rel="shortcut icon">
+</head>
+<body>
+    <div id = "pageContainer">
+        <header>
+            <div id = "PageTitleContainer">
+                <h1 id = "PageTitle"><span class="title">John Cena</span> <small class="title">V/S</small> <span class="title">The Rock</span></h1>
+            </div>
+        </header>
+        <div id = "ContentBodyContainer">
+            {% if message_level %}
+                <div id = "message_container">
+                    <div class = "message" id="{{message_level}}">
+                        {{ message }}
+                    </div>
+                </div>
+            {% endif %}
+            <form name = "emailID" method="POST">
+                <div id = "emailSpan">E-mail Address:&nbsp&nbsp<input type = "text" id = "emailEntry" name="email" autofocus pattern=".+@.+\.com"></div>
+                <div id = "optionsContainer">
+                    <div id = "imageContainer">
+                        <img id = "john_cena_img" src = "{{ url_for('static', filename='john_cena.jpg') }}">
+                        <img id = "the_rock_img" src = "{{ url_for('static', filename='the_rock.jpg') }}">
+                    </div>
+                    <div id = "radioContainer">
+                        <span id="john_cena_label"><input type="radio" id="john_cena_radio" value="John Cena" name="fighters"> John Cena </span>
+                        <span id="the_rock_label"><input type = "radio" id = "the_rock_radio" value = "The Rock" name="fighters">  The Rock </span>
+                    </div>
+                </div>
+                <div id = "submitContainer">
+                    <input type="submit" id="submit_btn">
+                </div>
+            </form>
+            {% if total_votes %}
+                <div id = "votes_each">
+                    <div id = "votes_bar">
+                        <div id="john_cena_bar" style="width: {{ vote_counts[0][1] / total_votes * 100 }}%"></div>
+                    </div>
+                    <div><nobr>
+                        <figure style="margin: 0px 425px 0px 55px" id="icon1"><img src = "{{ url_for('static', filename='john_cena.jpg') }}" class = "bar_icon" id="icon1"><figcaption class="cc">John Cena</figcaption></figure>
+                        <figure style="margin: 0px 30px 0px 425px"  id="icon1"><img src = "{{ url_for('static', filename='the_rock.jpg') }}" class = "bar_icon" id="icon2"><figcaption class="cc">The Rock</figcaption></figure></nobr>
+                    </div>
+                    <div id="total_votes">
+                    <br><br>Total Votes So Far :  {{ total_votes }}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
+
